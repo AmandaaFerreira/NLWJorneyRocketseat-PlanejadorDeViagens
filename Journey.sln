@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Journey.Infrastructure", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validators.Test", "tests\Validators.Test\Validators.Test.csproj", "{F6290B8B-3A84-4743-96D1-6BBD3B81FE44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Journey.Api", "src\Journey.Api\Journey.Api.csproj", "{A06EE223-358C-4E1A-BAD1-7063E7177816}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Journey.Api", "src\Journey.Api\Journey.Api.csproj", "{A06EE223-358C-4E1A-BAD1-7063E7177816}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

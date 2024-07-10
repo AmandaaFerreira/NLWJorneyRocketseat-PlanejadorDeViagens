@@ -86,5 +86,14 @@ namespace Journey.Exception {
                 return ResourceManager.GetString("NAME_EMPTY", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Viagem não encontrada. .
+        /// </summary>
+        public static string TRIP_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("TRIP_NOT_FOUND", resourceCulture);
+            }
+        }
     }
 }
