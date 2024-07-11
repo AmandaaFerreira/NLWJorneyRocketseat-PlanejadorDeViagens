@@ -89,7 +89,7 @@ public class TripsController : ControllerBase
     }
 
 
-    [HttpPut]
+    [HttpDelete]
     [Route("{tripId}/activity/{activityId}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(typeof(ResponsesErrorsJson), StatusCodes.Status404NotFound)]
