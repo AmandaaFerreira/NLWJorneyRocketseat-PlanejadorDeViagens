@@ -61,6 +61,24 @@ namespace Journey.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Atividade não encontrada..
+        /// </summary>
+        public static string ACTIVITY_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("ACTIVITY_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A data selecionada para a atividade não coincide com o seu período de viagem..
+        /// </summary>
+        public static string DATE_NOT_WITHIN_TRAVEL_PERIOD {
+            get {
+                return ResourceManager.GetString("DATE_NOT_WITHIN_TRAVEL_PERIOD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a A data da viagem deve ser posterior a hoje..
         /// </summary>
         public static string DATE_TRIP_MUST_BE_LATER_THAN_TODAY {
@@ -93,6 +111,15 @@ namespace Journey.Exception {
         public static string TRIP_NOT_FOUND {
             get {
                 return ResourceManager.GetString("TRIP_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Erro desconhecido.
+        /// </summary>
+        public static string UNKNOWN_ERROR {
+            get {
+                return ResourceManager.GetString("UNKNOWN_ERROR", resourceCulture);
             }
         }
     }
