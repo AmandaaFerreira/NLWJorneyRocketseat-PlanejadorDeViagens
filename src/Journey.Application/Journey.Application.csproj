@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.9.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Journey.Communication\Journey.Communication.csproj" />
     <ProjectReference Include="..\Journey.Exception\Journey.Exception.csproj" />
     <ProjectReference Include="..\Journey.Infrastructure\Journey.Infrastructure.csproj" />

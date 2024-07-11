@@ -1,3 +1,4 @@
+using Journey.Application.UseCases.Delete;
 using Journey.Application.UseCases.GetAll;
 using Journey.Application.UseCases.Trips.Register;
 using Journey.Communication.Requests;
@@ -45,5 +46,18 @@ public class TripsController : ControllerBase
         var response = useCase.Execute();
 
         return Ok(response);
+    }
+
+    [HttpDelete]
+    [Route("{id}")]
+    [ProducesResponseType (StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
+    public IActionResult Delete([FromRoute] Guid id)
+    {
+        var useCase = new DeleteTripByIdUseCase();
+
+        useCase.Execute(id);
+
+        return NoContent();
     }
 }
